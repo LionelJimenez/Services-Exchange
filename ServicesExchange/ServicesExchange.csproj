@@ -54,11 +54,14 @@
   <ItemGroup>
     <Content Include="AddPost.aspx" />
     <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
     <Content Include="EditPost.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Login_MyPosts.aspx" />
     <Content Include="MyPosts.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -76,6 +79,13 @@
       <DependentUpon>AddPost.aspx</DependentUpon>
     </Compile>
     <Compile Include="Category.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EditPost.aspx.cs">
       <DependentUpon>EditPost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
